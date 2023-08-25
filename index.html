@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "work-sans";
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-1 bg-[#1111110D]">
+    <!-- banner seciton  -->
+
+    <header
+      class="bg-[#F9F6E2] lg:flex-row flex flex-col items-center justify-around md:py-20"
+    >
+      <div class="text-center">
+        <p class="text-xl md:text-3xl font-medium">---SALE FEVER---</p>
+        <h2 class="text-3xl md:text-6xl font-bold font-sans py-3">
+          Purchase TK 200 or <br />above & get
+          <span class="text-[#E527B2]">20% off</span>
+        </h2>
+        <div class="flex items-center justify-center gap-3 text-xl py-4">
+          <p>Use Promo Code</p>
+          <p class="badge text-white bg-[#E527B2] rounded text-xl p-4">
+            SELL200
+          </p>
+        </div>
+      </div>
+      <img src="/images/Summer 1.png" class="w-[500px]" alt="" />
+    </header>
+    <main class="max-w-screen-2xl mx-auto">
+      <!-- card-content  -->
+
+      <section class="py-[120px] m-3 flex flex-col lg:flex-row gap-10">
+        <div class="flex-1">
+          <!-- Kitchenware card -->
+          <div>
+            <h1>
+              <span class="font-semibold text-3xl">Kitchenware</span>
+            </h1>
+            <div
+              class="mt-6 mb-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+            >
+              <!-- kithenware product 1 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod1.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title hover:cursor-pointer">k.Accessries</h2>
+                  <p class="text-[#11111180]">39.00 TK</p>
+                </div>
+              </div>
+              <!-- kithenware product 2 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod2.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">K.Bamboe</h2>
+                  <p class="text-[#11111180]">25.00 TK</p>
+                </div>
+              </div>
+              <!-- kithenware product 3 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod3.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Home Cooker</h2>
+                  <p class="text-[#11111180]">49.00 TK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SportWare card -->
+          <div>
+            <h1>
+              <span class="font-semibold text-3xl">SportsWear</span>
+            </h1>
+            <div
+              class="mt-6 mb-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+            >
+              <!-- SprotsWear product 1 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod4.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Sports Back Cap</h2>
+                  <p class="text-[#11111180]">49.00 TK</p>
+                </div>
+              </div>
+              <!-- kithenware product 2 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod5.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Full Jersay Set</h2>
+                  <p class="text-[#11111180]">69.00 TK</p>
+                </div>
+              </div>
+              <!-- kithenware product 3 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod6.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Sports Cates</h2>
+                  <p class="text-[#11111180]">159.00 TK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Furniture card  -->
+          <div>
+            <h1>
+              <span class="font-semibold text-3xl">Furniture</span>
+            </h1>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-28 gap-10"
+            >
+              <!-- Furniture product 1 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod7.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Single Relax Chiar</h2>
+                  <p class="text-[#11111180]">185.00 TK</p>
+                </div>
+              </div>
+              <!-- Furniture product 2 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod7.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Chilren Play</h2>
+                  <p class="text-[#11111180]">299.00 TK</p>
+                </div>
+              </div>
+              <!-- Furniture product 3 -->
+              <div
+                onclick="getProductName(this)"
+                class="card border rounded-xl shadow-xl max-w-[340px] max-h-[350px]"
+              >
+                <figure class="m-5 h-[200px] bg-[#1111110D]">
+                  <img src="/images/prod9.png" alt="" class="rounded" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                  </div>
+                  <h2 class="card-title">Flexible Sofa</h2>
+                  <p class="text-[#11111180]">339.00 TK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- count section  -->
+
+        <div class="space-y-7 mt-[58px]">
+          <!-- Coupon Area -->
+          <div class="bg-white p-5 rounded-xl">
+            <h2>
+              <span class="font-medium text-2xl">Have coupon?</span>
+            </h2>
+            <div class="flex mt-3 items-center">
+              <input
+                type="text"
+                name=""
+                class="text-xl font-semibold px-4 rounded-l-xl bg-[#11111126] w-40 h-12"
+                id="coupon"
+                placeholder="Coupon code"
+              />
+              <button
+                id="apply"
+                class="btn text-white text-xl bg-[#E527B2] hover:bg-[#E527B2] rounded-none rounded-r-xl"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl bg-white space-y-3">
+            <div id="productName"></div>
+            <div class="border-t border-b py-2">
+              <h2 class="my-1">Total price: <span id="total"> 00</span> Tk</h2>
+              <h2 class="my-1">Discount: <span id="discount">00</span> Tk</h2>
+              <h2 class="my-1">
+                Grand Total: <span id="grandAmount">00</span> Tk
+              </h2>
+            </div>
+
+            <!-- You can open the modal using ID.showModal() method -->
+            <button
+              onclick="my_modal_4.showModal()"
+              id="purchase"
+              class="btn w-full text-white text-xl bg-[#E527B2] hover:bg-[#E527B2]"
+            >
+              Make Purchase
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <form
+                method="dialog"
+                class="modal-box rounded-lg lg:py-20 lg:px-10"
+              >
+                <div class="flex justify-center">
+                  <img src="/images/congo.png" alt="" />
+                </div>
+                <h3
+                  class="text-4xl md:text-6xl font-extrabold text-center py-4"
+                >
+                  Congratulations
+                </h3>
+                <p class="pb-2 text-center text-xl text-[#11111180]">
+                  You Purchase the product
+                </p>
+                <div class="flex justify-center my-5">
+                  <!-- if there is a button, it will close the modal -->
+                  <button
+                    id="resetButton"
+                    onclick="resetPage()"
+                    class="btn btn-md text-white text-xl py-2 px-8 bg-[#E527B2] hover:bg-[#E527B2]"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
